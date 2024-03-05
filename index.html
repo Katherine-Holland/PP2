@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Google fonts import Rubik -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- Google font import Hind Madur -->
+    <link href="https://fonts.googleapis.com/css2?family=Hind+Madurai:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Meta tags -->
+    <meta name="description" content="Finance First helps parents learn how to invest for their child's future">
+    <meta name="keywords" content="Finance, banking, investing, junior isa, junior sipp">
+    <meta name="author" content="Katherine Weston">
+    <title>Finance First - Home Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Favicon tutorial from Love Running module-->
+    <link rel="icon" type="image/png" sizes="300x300" href="assets/favicon/faviconlogo.png">
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+  <body>
+    <div class="container">
+      <h1>Finance First</h1>
+        <!-- nav bar taken from w3schools https://www.w3schools.com/howto/howto_js_topnav_responsive.asp -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active"><i class="fa fa-home" aria-label="Home"></i></a>
+            <a href="resources.html" aria-label="Resources">Resources</a>
+            <a href="signup.html" aria-label="Sign Up">Sign Up</a>
+            <a href="javascript:void(0);" class="icon" aria-label="menu" onclick="myFunction()">
+            <i class="fa fa-bars"></i></a>
+        </div>
+        <!-- end nav bar -->
+        <div class="main-content">
+           
+
+            
+          </div>
+       <footer>
+        <div class="footer"><!-- Code taken from the Love Running tutorial -->
+               <ul id="social-networks">
+                    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Visit our Facebook page (opens in a new window)"><i class="fa fa-facebook-official" aria-hidden="true"></i></a></li>
+                    <li><a href="https://www.twitter.com/" target="_blank" rel="noopener" aria-label="Visit our Twitter page (opens in a new window)"><i class="fa fa-twitter-square" aria-hidden="true"></i></a></li>
+                </ul>
+                <!-- code modified from W3 schools: https://www.w3schools.com/html/tryit.asp?filename=tryhtml_images_hackman -->
+                <img src="assets/images/pigcoin.gif" alt="money dropping into piggybank" style="width:70px;height:85px;">
+                <p>Copyright © Finance First 2024</p>
+                <p>Disclaimer: <em>This site is for educational purposes and is not financial advice.</em></p>
+         </div>  
+        </footer>
+    </div>
+    <script>
+          function myFunction() {
+          var x = document.getElementById("myTopnav");
+          if (x.className === "topnav") {
+           x.className += " responsive";
+          } else {
+          x.className = "topnav";
+          }
+        }
+    </script>
+  </div>
+</body>
+</html>
