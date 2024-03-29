@@ -7,4 +7,14 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
-
+var checkDead = setInterval(function() {
+  var characterTop = 
+    parseInt (window.getComputedStyle(character) .getPropertyValue("Top"));
+  var blockLeft =
+    parseInt (window.getComputedStyle(block) .getPropertyValue("Left"))
+    if(blockLeft<20 && blockLeft>0 && characterTop>=130)
+      block.style.animation = "none";
+      block.style.display = "none";
+      alert("You lose!");
+     
+  }, 10);
