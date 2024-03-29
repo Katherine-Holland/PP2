@@ -1,3 +1,6 @@
+let blockLeft;
+let characterTop;
+
 document.addEventListener('keydown', function(event) {
    console.log("Keydown event detected"); // For debugging purposes
   const character = document.getElementById('character');
@@ -41,11 +44,12 @@ if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
 }
 
 function restartGame(){
-  if (gameIsOver = true){
-  var character = document.getElementById("character");
-  var block = document.getElementById("block");
-  character.style.top = "150px";
-  block.style.left = "100%";
-  block.style.animation = "block 2s infinite linear";
-  };
+  if (gameIsOver === false) {
+    var character = document.getElementById("character");
+    var block = document.getElementById("block");
+    character.style.top = "150px";
+    block.style.left = "96%";
+    block.style.animation = "block 2s infinite linear";
+    gameIsOver === false; // Reset gameIsOver flag
+  }
 }
