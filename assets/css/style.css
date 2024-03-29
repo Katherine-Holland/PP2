@@ -68,7 +68,7 @@ footer {
   position: relative;
   top: 130px;
   left: 96%;
-  animation: block 1s infinite linear;
+  animation: block 2s infinite linear;
 }
 
 @keyframes block {

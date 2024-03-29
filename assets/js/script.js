@@ -7,6 +7,11 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+document.getElementById("game-over-message").addEventListener('click', function() {
+  this.style.display = 'none'; // Hide the message
+  restartGame(); // Function you would define to reset game state and start over
+});
+
 // modified from the tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ
 let gameIsOver = false;
 
@@ -21,7 +26,27 @@ var checkDead = setInterval(function() {
   if(blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
     block.style.animation = "none";
     block.style.display = "none";
-    gameIsOver = true; // Set the flag to true to prevent further alerts
-    alert("You lose!");
+    gameIsOver = true;
+    var gameOverMessage = document.getElementById("game-over-message");
+    gameOverMessage.textContent = "You lose! Click to restart.";
+    gameOverMessage.style.display = "block"; // Make sure this element is visible
   }
 }, 10);
+
+
+if (blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
+  block.style.animation = "none";
+  block.style.display = "none";
+  gameIsOver = true;
+  document.getElementById("game-over-message").style.display = "block"; // Show the message
+}
+
+function restartGame(){
+  if (gameIsOver = true){
+  var character = document.getElementById("character");
+  var block = document.getElementById("block");
+  character.style.top = "150px";
+  block.style.left = "100%";
+  block.style.animation = "block 2s infinite linear";
+  };
+}
