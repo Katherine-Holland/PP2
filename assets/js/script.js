@@ -7,14 +7,21 @@ document.addEventListener('keydown', function(event) {
   }
 });
 
+// modified from the tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ
+let gameIsOver = false;
+
 var checkDead = setInterval(function() {
+  if(gameIsOver) return; // Stops the function if the game is over
+
   var characterTop = 
-    parseInt (window.getComputedStyle(character) .getPropertyValue("Top"));
+    parseInt(window.getComputedStyle(character).getPropertyValue("top"));
   var blockLeft =
-    parseInt (window.getComputedStyle(block) .getPropertyValue("Left"))
-    if(blockLeft<20 && blockLeft>0 && characterTop>=130)
-      block.style.animation = "none";
-      block.style.display = "none";
-      alert("You lose!");
-     
-  }, 10);
+    parseInt(window.getComputedStyle(block).getPropertyValue("left"));
+
+  if(blockLeft < 20 && blockLeft > 0 && characterTop >= 130) {
+    block.style.animation = "none";
+    block.style.display = "none";
+    gameIsOver = true; // Set the flag to true to prevent further alerts
+    alert("You lose!");
+  }
+}, 10);
