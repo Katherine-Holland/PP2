@@ -1,19 +1,10 @@
 document.addEventListener('keydown', function(event) {
+   console.log("Keydown event detected"); // For debugging purposes
   const character = document.getElementById('character');
-  if (event.key === " " && !character.classList.contains('animate')) { // Spacebar key and not already jumping
+  if (event.key === " " && !character.classList.contains('animate')) { // Spacebar key
     character.classList.add('animate');
-    setTimeout(() => character.classList.remove('animate'), 500); // Animation duration
+    setTimeout(() => character.classList.remove('animate'), 500); 
   }
 });
 
 
-//var character = document.getElementById("character");
-/*var block = document.getElementById("block");
-function jump() {
-  if(character.classList != "animate"){
-  character.classList.add("animate");
-  }
-  setTimeout(function(){
-    character.classList.remove("animate");
-  }, 500);
-}
