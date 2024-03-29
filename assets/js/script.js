@@ -28,7 +28,6 @@ var checkDead = setInterval(function() {
     block.style.display = "none";
     gameIsOver = true;
     var gameOverMessage = document.getElementById("game-over-message");
-    gameOverMessage.textContent = "You lose! Click to restart.";
     gameOverMessage.style.display = "block"; // Make sure this element is visible
   }
 }, 10);
