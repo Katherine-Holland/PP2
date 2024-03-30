@@ -3,7 +3,9 @@ document.addEventListener('keydown', function(event) {
     const character = document.getElementById('character');
     if (event.key === " " && !character.classList.contains('animate')) { // Spacebar key
         character.classList.add('animate');
-        setTimeout(() => character.classList.remove('animate'), 500); 
+        setTimeout(() => character.classList.remove('animate'), 500);
+        jumpCount++; // Increment jump count
+        document.getElementById("score").innerHTML = jumpCount; // Update score on the HTML element
     }
 });
 
@@ -15,6 +17,7 @@ document.getElementById("game-over-message").addEventListener('click', function(
 let gameIsOver = false;
 let characterTop = 0; // Initialize characterTop variable
 let blockLeft = 0; // Initialize blockLeft variable
+let jumpCount = 0; // Initialize jump count variable
 
 var checkDead = setInterval(function() {
     if (gameIsOver) return; // Stops the function if the game is over
@@ -37,6 +40,7 @@ function restartGame() {
     block.style.display = "block";
     block.style.animation = "block 2s infinite linear";
     block.style.left = "100%";
-    document.getElementById("score").innerHTML = 0;
+    jumpCount = 0; // Reset jump count
+    document.getElementById("score").innerHTML = 0; // Reset score on the HTML element
     character.style.top = "150px";
 }
