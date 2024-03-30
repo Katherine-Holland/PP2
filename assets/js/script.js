@@ -10,6 +10,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 document.getElementById("game-over-message").addEventListener('click', function() {
+   console.log("click detected"); // For debugging purposes
     this.style.display = 'none'; // Hide the message
     restartGame(); // Restart the game
 });
