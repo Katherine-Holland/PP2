@@ -19,15 +19,19 @@
   <body>
     <h1> Get Gardening</h1>
       <p>Watch out, there are snails in this garden and they want to eat your plants!</p>
+      <p>Press SPACEBAR to jump.</p>
 
       <div id="game">
 
         <div id="character"></div>
         <div id="block"></div>
-        <div id="game-over-message" style="display: none;">Game Over! Click to restart.</div>
+        <button onclick="restartGame()" id="game-over-message" style="display: none;">Game Over! Click to restart.</button>
+ //modified from Love Maths tutorial//
+        <div class="score-area">
+          <p class="scores">Jumps:<span id="score">0</span></p>
         </div>
-        
-      </div>
+
+    
     <footer>
       <div class="footer">
         <ul id="social-networks">
