@@ -4,8 +4,8 @@ document.addEventListener('keydown', function(event) {
     if (event.key === " " && !character.classList.contains('animate')) { // Spacebar key
         character.classList.add('animate');
         setTimeout(() => character.classList.remove('animate'), 500);
-        jumpCount++; // Increment jump count
-        document.getElementById("score").innerHTML = jumpCount; // Update score on the HTML element
+        jumpCount++; 
+        document.getElementById("score").innerHTML = jumpCount;
     }
 });
 

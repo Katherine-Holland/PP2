@@ -9,6 +9,15 @@ body {
   text-align: center;
 }
 
+.topnav {
+  width: 100%;
+  position:relative;
+  display: block;
+  padding: 14px 16px;
+  background-color: #85f7f9;
+  overflow: hidden;
+}
+
 header {
   position: absolute;
   text-align: center;
@@ -18,21 +27,7 @@ header {
   padding: 10px;
   font-family: 'Noto+Sans', sans-serif;
 }
-
-footer {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  min-height: 80px;
-  padding-top: 5px;
-  background-color: #dff9cd;
-  color: #04250a;
-  text-align: center;
-}
-
 /* game area - modified code from tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ */ 
-
 #game{
   width: 75%;
   margin-left: auto;
@@ -50,6 +45,7 @@ footer {
   position: relative;
   top: 150px;
 }
+
 .animate {
   animation: jump 500ms;
 }
@@ -92,7 +88,24 @@ footer {
   border-radius:20px;
 }
 
-/* Footer */ 
+#chart_div {
+  padding-top: 20%;
+  margin-left:0px;
+  margin-right: auto;
+  margin-bottom: 20px;
+}
+/* Footer taken from P2 walkthrough tutorial rock paper scissors */ 
+footer {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  min-height: 80px;
+  padding-top: 5px;
+  background-color: #bcf494;
+  color: #04250a;
+  text-align: center;
+}
 
 #social-networks {
     text-align: center;
