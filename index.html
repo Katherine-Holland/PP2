@@ -8,28 +8,18 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <meta name="description" content="Learn the basics of gardening">
+    <meta name="description" content="Learn about snails and gardening">
     <meta name="keywords" content="gardening, snails, gardening game">
     <meta name="author" content="Katherine Weston">
     <title>Get Gardening</title>
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <!--Load the AJAX API-->
+    <!-- Modified from the google chart tutorial: https://developers.google.com/chart/interactive/docs/quick_start-->
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
     <script type="text/javascript">
-
-      // Load the Visualization API and the corechart package.
       google.charts.load('current', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
       google.charts.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
       function drawChart() {
-
-        // Create the data table.
         var data = new google.visualization.DataTable();
         data.addColumn('string', 'Topping');
         data.addColumn('number', 'Slices');
@@ -40,25 +30,19 @@
           ['Herbs', 1],
           ['Delphinium', 2]
         ]);
-
-        // Set chart options
         var options = {'title':'Plants Snails Ate In One Night',
                        'width':456,
                        'height':342};
-
-        // Instantiate and draw our chart, passing in some options.
         var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
         chart.draw(data, options);
       }
     </script>
   </head>
-  
   <body>
     <div class="container"> 
      <h1> Get Gardening</h1>
       <p>Watch out, there are snails in this garden and they want to eat your plants!</p>
       <p>Press SPACEBAR to jump.</p>
-
     <div id="game">
           <img id="character" src="assets/images/gnome.png">
           <img id="block" src="assets/images/snail.png">
@@ -67,7 +51,6 @@
       <div class="score-area">
           <p class="scores">Jumps:<span id="score">0</span></p>
       </div>
-      
       <div id="chart_div">  
       </div>
     </div>
