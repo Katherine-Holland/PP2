@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -51,9 +50,9 @@
         <p>Press SPACEBAR to jump.</p>
       </div> 
     <div id="game">
-          <img id="character" src="assets/images/gnome.png">
-          <img id="block" src="assets/images/snail.png">
-          <button class="button" onclick="restartGame()" id="game-over-message" style="display: none;">Game Over! Click to restart</button>
+          <img id="character" src="assets/images/gnome.png" alt="Gnome">
+          <img id="block" src="assets/images/snail.png" alt="Snail">
+          <button class="button" onclick="restartGame()" id="game-over-message" style="display" aria-label="Game over. Click to restart": none;">Game Over! Click to restart</button>
       <!--modified from Love Maths tutorial-->
       <div class="score-area">
           <p class="scores">Jumps:<span id="score">0</span></p>
