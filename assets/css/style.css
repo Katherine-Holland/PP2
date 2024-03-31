@@ -7,11 +7,6 @@
     height: 100vh;
 }
 
-html {
-  min-height: 100%;
-  position: relative;
-}
-
 body {
   font-family:'Noto+Sans', sans-serif;
   margin: 0;
