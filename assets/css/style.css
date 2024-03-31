@@ -75,7 +75,7 @@ body {
 }
 
 #chart_div {
-  position: float;
+  position: center;
   padding-top: 20%;
   margin-left:0px;
   margin-right: auto;
