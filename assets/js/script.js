@@ -1,6 +1,8 @@
+const character = document.getElementById('character');
+const block = document.getElementById('block');
+
 document.addEventListener('keydown', function(event) {
     console.log("Keydown event detected"); // For debugging purposes
-    const character = document.getElementById('character');
     if (event.key === " " && !character.classList.contains('animate')) { // Spacebar key
         character.classList.add('animate');
         setTimeout(() => character.classList.remove('animate'), 500);
@@ -16,13 +18,9 @@ document.getElementById("game-over-message").addEventListener('click', function(
 });
 
 let gameIsOver = false;
-let characterTop = 0; // Initialize characterTop variable
-let blockLeft = 0; // Initialize blockLeft variable
 let jumpCount = 0; // Initialize jump count variable
 
-var checkDead = setInterval(function() {
-    if (gameIsOver) return; // Stops the function if the game is over
-
+setInterval(function() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
 
@@ -33,6 +31,7 @@ var checkDead = setInterval(function() {
         var gameOverMessage = document.getElementById("game-over-message");
         gameOverMessage.style.display = "block"; // Display game over message
     }
+   if (gameIsOver) return; // Stops the function if the game is over
 }, 10);
 
 function restartGame() {
