@@ -13,12 +13,14 @@ document.addEventListener('keydown', function(event) {
 
 document.getElementById("game-over-message").addEventListener('click', function() {
    console.log("click detected"); // For debugging purposes
-    this.style.display = 'none'; // Hide the message
-    restartGame(); // Restart the game
+    this.style.display = 'none'; 
+    restartGame(); 
 });
 
 let gameIsOver = false;
-let jumpCount = 0; // Initialize jump count variable
+let jumpCount = 0;
+
+/* Modified from the youtube tutorial */
 
 setInterval(function() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
@@ -29,9 +31,9 @@ setInterval(function() {
         block.style.display = "none";
         gameIsOver = true;
         var gameOverMessage = document.getElementById("game-over-message");
-        gameOverMessage.style.display = "block"; // Display game over message
+        gameOverMessage.style.display = "block"; 
     }
-   if (gameIsOver) return; // Stops the function if the game is over
+   if (gameIsOver) return; 
 }, 10);
 
 function restartGame() {
@@ -40,7 +42,7 @@ function restartGame() {
     block.style.display = "block";
     block.style.animation = "block 2s infinite linear";
     block.style.left = "100%";
-    jumpCount = 0; // Reset jump count
-    document.getElementById("score").innerHTML = 0; // Reset score on the HTML element
+    jumpCount = 0;
+    document.getElementById("score").innerHTML = 0;
     character.style.top = "150px";
 }
