@@ -1,32 +1,34 @@
 const character = document.getElementById('character');
 const block = document.getElementById('block');
-// Existing keydown event for desktop
+let gameIsOver = false;
+let jumpCount = 0;
+let scoreUpdated = false; 
+
 document.addEventListener('keydown', function(event) {
     if (event.key === " " && !character.classList.contains('animate')) {
         characterJump();
     }
 });
-// Added touchstart event for mobile
+
 document.addEventListener('touchstart', function() {
     if (!character.classList.contains('animate')) {
         characterJump();
     }
 });
+
 function characterJump() {
-    console.log("Jump event detected"); // For debugging purposes
+    console.log("Jump event detected"); // debugging purposes
     character.classList.add('animate');
+    scoreUpdated = false; 
     setTimeout(() => character.classList.remove('animate'), 500);
-    jumpCount++;
-    document.getElementById("score").innerHTML = jumpCount;
 }
+
 document.getElementById("game-over-message").addEventListener('click', function() {
-    console.log("click detected"); // For debugging purposes
+    console.log("click detected"); // debugging purposes
     this.style.display = 'none';
     restartGame();
 });
-let gameIsOver = false;
-let jumpCount = 0;
-/* Modified from the youtube tutorial */
+
 setInterval(function() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -34,11 +36,14 @@ setInterval(function() {
         block.style.animation = "none";
         block.style.display = "none";
         gameIsOver = true;
-        var gameOverMessage = document.getElementById("game-over-message");
-        gameOverMessage.style.display = "block";
+        document.getElementById("game-over-message").style.display = "block";
+    } else if (blockLeft < 20 && blockLeft > 0 && !scoreUpdated) {
+        jumpCount++;
+        document.getElementById("score").innerHTML = jumpCount;
+        scoreUpdated = true; 
     }
-    if (gameIsOver) return;
 }, 10);
+
 function restartGame() {
     gameIsOver = false;
     character.style.display = "block";
