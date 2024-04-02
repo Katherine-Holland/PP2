@@ -75,10 +75,11 @@ body {
 }
 
 #chart_div {
-  #chart_div {
-    width: 100%; /* Make it responsive */
-    height: auto; /* Adjust based on aspect ratio */
-    margin: 20px 20px; /* Add some space around the chart */
+  width: 100%; /* Make it responsive */
+  height: auto; /* Adjust based on aspect ratio */
+  margin: 20px auto; /* Centered with auto */
+}
+
     
   }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
