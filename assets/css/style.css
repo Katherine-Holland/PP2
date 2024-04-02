@@ -83,7 +83,7 @@ body {
     
   }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
-.footer {
+footer {
   position: static;
   left: 0;
   bottom: 0;
@@ -92,6 +92,7 @@ body {
   padding-top: 5px;
   background-color: #bcf494;
   color: #04250a;
+  text-align: center;
   
 }
 
