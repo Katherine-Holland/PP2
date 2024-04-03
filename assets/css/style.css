@@ -87,7 +87,10 @@ header {
   margin-right: auto; /* Centering horizontally */
 }
 
-
+#top-tips {
+  text-align: center;
+  list-style-type: none;
+}
     
   }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
