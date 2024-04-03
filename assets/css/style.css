@@ -2,7 +2,6 @@
   width: 100%;
   max-width: 100%;
   margin:20px;
-  background-color: #ffffff;
   height: auto; 
   text-align: center;
 }
@@ -11,6 +10,7 @@ body {
   font-family:'Noto+Sans', sans-serif;
   text-align: center;
   width: 100%;
+  background-color: white;
 }
 
 header {
@@ -92,7 +92,9 @@ header {
   list-style-type: none;
 }
     
-  }
+.grass {
+  width: 100%;
+}
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
 footer {
   position: static;
@@ -100,7 +102,6 @@ footer {
   bottom: 0;
   width: 100%;
   min-height: 80px;
-  background-color:#9af49a;
   padding-top: 5px;
   color: #04250a;
   text-align: center;
@@ -121,11 +122,8 @@ footer {
       margin:5;
       text-align: center;
     }
+
   #chart_div {
-    width: 100%; 
-    height: auto; 
-    position: relative;
-    margin-left: auto; 
-    margin-right: auto; 
+    width: 100%;
   }
 }
