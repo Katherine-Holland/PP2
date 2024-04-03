@@ -80,11 +80,11 @@ header {
 }
 
 #chart_div {
-  width: 30%; /* Make it responsive */
-  height: auto; /* Adjust based on aspect ratio */
+  width: 30%; 
+  height: auto; 
   position: relative;
-  margin-left: auto; /* Centering horizontally */
-  margin-right: auto; /* Centering horizontally */
+  margin-left: auto; 
+  margin-right: auto; 
 }
 
 #top-tips {
@@ -100,6 +100,7 @@ footer {
   bottom: 0;
   width: 100%;
   min-height: 80px;
+  background-color:#9af49a;
   padding-top: 5px;
   color: #04250a;
   text-align: center;
@@ -121,10 +122,10 @@ footer {
       text-align: center;
     }
   #chart_div {
-    width: 100%; /* Make it responsive */
-    height: auto; /* Adjust based on aspect ratio */
+    width: 100%; 
+    height: auto; 
     position: relative;
-    margin-left: auto; /* Centering horizontally */
-    margin-right: auto; /* Centering horizontally */
+    margin-left: auto; 
+    margin-right: auto; 
   }
 }
