@@ -1,10 +1,10 @@
 .container {
-  width: 100%; 
+  width: 100%;
+  max-width: 100%;
   margin:20px;
   background-color: #ffffff;
   height: auto; 
   text-align: center;
-  padding-left: 5px;
 }
 
 body {
@@ -21,9 +21,8 @@ header {
 
 /* game area - modified code from tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ */ 
 #game {
-  width: 80%;
-  margin-left:20px;
-  margin-right: 20px;
+  width: 90%;
+  margin:auto;
   margin-top: 1%;
   text-align: center;
   height: 200px;
@@ -81,9 +80,13 @@ header {
 }
 
 #chart_div {
-  width: 75%; /* Make it responsive */
+  width: 30%; /* Make it responsive */
   height: auto; /* Adjust based on aspect ratio */
+  position: relative;
+  margin-left: auto; /* Centering horizontally */
+  margin-right: auto; /* Centering horizontally */
 }
+
 
     
   }
@@ -109,8 +112,16 @@ footer {
 
 @media (max-width: 897px) {
     .container {
+      width:100%;
       max-width: 100%;
       margin:5;
       text-align: center;
     }
+  #chart_div {
+    width: 100%; /* Make it responsive */
+    height: auto; /* Adjust based on aspect ratio */
+    position: relative;
+    margin-left: auto; /* Centering horizontally */
+    margin-right: auto; /* Centering horizontally */
+  }
 }
