@@ -120,3 +120,5 @@ YouTube tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ
 
 **Google Charts:**
 <a href="https://developers.google.com/chart/interactive/docs/quick_start">Piechart Tutorial</a> 
+
+![Image](assets/images/grass.jpg)
