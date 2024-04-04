@@ -19,7 +19,6 @@ header {
   padding: 5px;
   width: 100%;
 }
-
 /* game area - modified code from tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ */ 
 #game {
   width: 90%;
@@ -62,6 +61,7 @@ header {
   0% {left: 100%;}
   100% {left: 0%;}
 }
+/* game area tutorial end */
 
 #game-over-message {
   display: none;
@@ -80,6 +80,7 @@ header {
   border-radius:20px;
 }
 
+/*Code to style the google chart*/
 #chart_div {
   width: 30%; 
   height: auto; 
@@ -124,7 +125,7 @@ footer {
       text-align: center;
     }
 
-      #chart_div {
+    #chart_div {
       width: 100%;
       height: auto;  
     }

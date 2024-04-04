@@ -1,6 +1,8 @@
+/* created a js file to remove code from head of HTML and place in script area of HTML body to help with load sequence*/
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 
+/*code modified into a function, from the google charts instructions https://developers.google.com/chart/interactive/docs/quick_start*/
 function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');
