@@ -10,6 +10,7 @@ body {
   font-family:'Noto+Sans', sans-serif;
   text-align: center;
   width: 100%;
+  max-width: 100%;
   background-color: white;
 }
 
@@ -117,13 +118,18 @@ footer {
 
 @media (max-width: 897px) {
     .container {
-      width:100%;
+      width: 100%
       max-width: 100%;
-      margin:5;
+      margin:5px;
       text-align: center;
     }
 
-  #chart_div {
-    width: 100%;
-  }
+      #chart_div {
+      width: 100%;
+      height: auto;  
+    }
+
+   .grass {
+     width: 100%;
+   }
 }
