@@ -62,7 +62,6 @@ header {
   100% {left: 0%;}
 }
 /* game area tutorial end */
-
 #game-over-message {
   display: none;
   position: relative;
@@ -79,7 +78,6 @@ header {
   background-color: white;
   border-radius:20px;
 }
-
 /*Code to style the google chart*/
 #chart_div {
   width: 30%; 
