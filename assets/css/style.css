@@ -96,7 +96,7 @@ header {
     
 .grass {
   width: 100%;
-  padding-top: 10%;
+  padding-top: 15%;
 }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
 footer {
@@ -121,7 +121,12 @@ footer {
     .container {
       width:100%;
       max-width: 100%;
-      margin:5px;
+      text-align: center;
+    }
+
+    body {
+      width: 100%;
+      max-width:100%;
       text-align: center;
     }
 
@@ -132,6 +137,6 @@ footer {
 
    .grass {
      width: 100%;
-    
+     padding-top:20%;
    }
 }
