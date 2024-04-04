@@ -107,7 +107,6 @@ footer {
   padding-top: 5px;
   color: #04250a;
   text-align: center;
-  
 }
 
 #social-networks {
@@ -119,7 +118,7 @@ footer {
 
 @media (max-width: 897px) {
     .container {
-      width: 100%
+      width:100%;
       max-width: 100%;
       margin:5px;
       text-align: center;
