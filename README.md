@@ -92,7 +92,7 @@ I used various methods to test the accessibility of my site and the quality of m
 4. I'd add in error handling when accessing DOM elements. Eg. the google charts api or any additional features for future editions.
 
 ## Credits
-Special thanks to my Mentor Spencer Barriball and to Darragh Drennan for their support and guidance.
+Special thanks to my Mentor Spencer Barriball for his support and guidance.
 
 ## Images:
 

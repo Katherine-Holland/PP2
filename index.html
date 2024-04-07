@@ -55,7 +55,35 @@
             <p class="scores">Jumps:<span id="score">0</span></p>
           </div>
       </div> 
-      <img class="grass" src="assets/images/grass.jpg" alt="grass website footer">
+
+
+
+
+      <div id= "wrapper">
+      <div id="quiz">
+          <h1>Quiz</h1>
+          <div id="question"></div>
+          <button id="answer1" onclick="checkAnswer(0)"></button>
+          <button id="answer2" onclick="checkAnswer(1)"></button>
+          <button id="answer3" onclick="checkAnswer(2)"></button>
+          <button id="answer4" onclick="checkAnswer(3)"></button>
+          <div>Score: <span id="score">0</span></div>
+          <div id="playAgain">
+            <p>Try Again?</p>
+            <button onclick="endgameOption(0)">Yes</button>
+            <button onclick="endgameOption(1)">Share Game</button>
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+      
+      
       <!--modified from Love Maths tutorial-->
       <footer>
         <div class="footer" id="social-networks">
@@ -71,5 +99,6 @@
     <!-- Modified from the google chart tutorial: https://developers.google.com/chart/interactive/docs/quick_start-->
     <script src="https://www.gstatic.com/charts/loader.js"></script>
     <script src="assets/js/chartscript.js"></script>
+    <script src="assets/js/quiz.js"></script>
   </body>
 </html>

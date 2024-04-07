@@ -16,8 +16,8 @@ function drawChart() {
 
     var options = {
         'title': 'Plants Snails Ate In One Night',
-        'width': 456,
-        'height': 342,
+        'width': '90%',
+        'height': '300px',
         'backgroundColor': 'transparent'
     };
 

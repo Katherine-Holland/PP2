@@ -1,7 +1,6 @@
 .container {
-  width: 100%;
+  width: 90%;
   max-width: 100%;
-  margin:20px;
   height: auto; 
   text-align: center;
 }
@@ -9,15 +8,15 @@
 body {
   font-family:'Noto+Sans', sans-serif;
   text-align: center;
-  width: 100%;
+  width: 90%;
   max-width: 100%;
   background-color: white;
 }
 
 header {
   background-color: #c2fbff;
-  padding: 5px;
-  width: 100%;
+  padding-bottom: 5px;
+  max-width: 100%;
 }
 /* game area - modified code from tutorial: https://www.youtube.com/watch?v=bG2BmmYr9NQ */ 
 #game {
@@ -90,18 +89,14 @@ header {
 #top-tips {
   text-align: center;
   list-style-type: none;
-}
-    
-.grass {
-  width: 100%;
-  padding-top: 15%;
+  max-width: 90%;
 }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
 footer {
   position: static;
   left: 0;
   bottom: 0;
-  width: 100%;
+  max-width: 100%;
   min-height: 80px;
   color: #04250a;
   text-align: center;
@@ -119,10 +114,15 @@ footer {
       width:100%;
       max-width: 100%;
       text-align: center;
+      margin: auto;
+    }
+
+    header {
+      max-width: 100%;
     }
 
     body {
-      width: 100%;
+      width: 90%;
       max-width:100%;
       text-align: center;
     }
@@ -131,8 +131,4 @@ footer {
       width: 100%;
       height: auto;  
     }
-
-   .grass {
-     width: 100%;
-   }
 }

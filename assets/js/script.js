@@ -5,7 +5,7 @@ let gameIsOver = false;
 let jumpCount = 0;
 let scoreUpdated = false; 
 let highScore = 0; 
-// Check for an existing high score in localStorage code taken from 
+// Check for an existing high score in localStorage code taken from W3Schools: https://www.w3schools.com/jsref/prop_win_localstorage.asp //
     if (localStorage.getItem("highScore")) {
     highScore = parseInt(localStorage.getItem("highScore"));
     document.getElementById("highScore").innerHTML = `High Score: ${highScore}`; 
