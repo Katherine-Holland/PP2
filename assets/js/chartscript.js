@@ -7,11 +7,11 @@ function drawChart() {
     data.addColumn('string', 'Topping');
     data.addColumn('number', 'Slices');
     data.addRows([
-        ['Lettuce', 3],
+        ['Beans', 3],
         ['Lupin', 1],
-        ['Helebore', 1],
+        ['Grass', 1],
         ['Herbs', 1],
-        ['Delphinium', 2]
+        ['Daisy', 2]
     ]);
 
     var options = {
