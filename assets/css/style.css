@@ -71,15 +71,17 @@ header {
   font-size: 18px;
   color: red;
 }
-#wrapper {
-  margin:2%;
-}
 
 .button {
   border: 1px solid #0b1351;
   background-color: white;
   border-radius:20px;
 }
+/* quiz wrapper and elements*/
+#wrapper {
+  margin:2%;
+}
+
 .snailpic {
   width: 5%;
   padding-top: 10px;
@@ -91,7 +93,6 @@ header {
   border-radius:20px;
   padding: 10px;
   margin: 5px;
- 
 }
 /*Code to style the google chart*/
 #chart_div {
@@ -107,7 +108,7 @@ header {
   list-style-type: none;
   max-width: 90%;
 }
-
+/* code snippet from W3Schools: https://www.w3schools.com/howto/howto_css_style_hr.asp */
 hr {
     border: 10px solid #27ce48;
     border-radius: 5px;
