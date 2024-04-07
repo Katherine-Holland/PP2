@@ -2,8 +2,8 @@ const question = document.getElementById('question');
 const answer1 = document.getElementById('answer1');
 const answer2 = document.getElementById('answer2');
 const answer3 = document.getElementById('answer3');
-const answer4 = document.getElementById('answer4'); // Make sure this exists in your HTML
-const scoreQuiz = document.getElementById('score');
+const answer4 = document.getElementById('answer4');
+const scoreQuiz = document.getElementById('scoreQuiz');
 const playAgain = document.getElementById('playAgain');
 const wrapper = document.getElementById('wrapper');
 let questionNumber = 0;
@@ -47,7 +47,7 @@ function checkAnswer(answerNumber) {
   let correctAnswer = questions[questionNumber].correct;
   if (answerNumber === correctAnswer) {
     scoreAmount++;
-    score.innerText = scoreAmount;
+    scoreQuiz.innerText = scoreAmount;
   }
   questionNumber++;
   if (questionNumber === questions.length) {
@@ -70,7 +70,7 @@ function endgame() {
 function resetQuiz() {
   questionNumber = 0;
   scoreAmount = 0;
-  score.innerText = scoreAmount;
+  scoreQuiz.innerText = scoreAmount;
   playAgain.style.visibility = "hidden";
   [answer1, answer2, answer3, answer4].forEach(button => {
     button.style.visibility = "visible";
