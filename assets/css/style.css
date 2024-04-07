@@ -71,11 +71,27 @@ header {
   font-size: 18px;
   color: red;
 }
+#wrapper {
+  margin:2%;
+}
 
 .button {
   border: 1px solid #0b1351;
   background-color: white;
   border-radius:20px;
+}
+.snailpic {
+  width: 5%;
+  padding-top: 10px;
+}
+
+#question, button {
+  border: 1px solid #0b1351;
+  background-color: #eafbf3;
+  border-radius:20px;
+  padding: 10px;
+  margin: 5px;
+ 
 }
 /*Code to style the google chart*/
 #chart_div {
@@ -90,6 +106,12 @@ header {
   text-align: center;
   list-style-type: none;
   max-width: 90%;
+}
+
+hr {
+    border: 10px solid #27ce48;
+    border-radius: 5px;
+  }
 }
 /* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
 footer {
