@@ -82,9 +82,9 @@ function endgameOption(chosen) {
   if (chosen === 0) {
     resetQuiz();
   } else {
-    wrapper.innerHTML = "<h1>Thanks for playing...</h1>"
-  };
-}
+    wrapper.innerHTML = 'Thanks for playing! Find out more about snails <a href="https://www.nhm.ac.uk/discover/snails-and-slugs.html" rel="noopener"  target="_blank">here</a>.';
+        }
+  }
 
 function startQuiz() {
   playAgain.style.visibility = "hidden";
