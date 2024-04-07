@@ -3,7 +3,7 @@ const answer1 = document.getElementById('answer1');
 const answer2 = document.getElementById('answer2');
 const answer3 = document.getElementById('answer3');
 const answer4 = document.getElementById('answer4'); // Make sure this exists in your HTML
-const score = document.getElementById('score');
+const scoreQuiz = document.getElementById('score');
 const playAgain = document.getElementById('playAgain');
 const wrapper = document.getElementById('wrapper');
 let questionNumber = 0;
@@ -83,7 +83,7 @@ function endgameOption(chosen) {
     resetQuiz();
   } else {
     wrapper.innerHTML = "<h1>Thanks for playing...</h1>"
-  }
+  };
 }
 
 function startQuiz() {

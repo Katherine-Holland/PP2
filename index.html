@@ -59,19 +59,19 @@
 
 
 
-      <div id= "wrapper">
-      <div id="quiz">
+      <div id="wrapper">
+        <div id="quiz">
           <h1>Quiz</h1>
           <div id="question"></div>
           <button id="answer1" onclick="checkAnswer(0)"></button>
           <button id="answer2" onclick="checkAnswer(1)"></button>
-          <button id="answer3" onclick="checkAnswer(2)"></button>
-          <button id="answer4" onclick="checkAnswer(3)"></button>
-          <div>Score: <span id="score">0</span></div>
-          <div id="playAgain">
+          <button id="answer3" onclick="checkAnswer(2)" style="display: none;"></button> <!-- Initially hidden if not needed -->
+          <button id="answer4" onclick="checkAnswer(3)" style="display: none;"></button> <!-- Initially hidden if not needed -->
+          <div>Score: <span id="scorequiz">0</span></div>
+          <div id="playAgain" style="visibility: hidden;"> <!-- Initially hidden -->
             <p>Try Again?</p>
-            <button onclick="endgameOption(0)">Yes</button>
-            <button onclick="endgameOption(1)">Share Game</button>
+            <button onclick="resetQuiz()">Yes</button> <!-- Updated to call resetQuiz instead -->
+            <button onclick="endgameOption(1)">No Thanks</button> <!-- Updated text for clarity -->
           </div>
         </div>
       </div>
