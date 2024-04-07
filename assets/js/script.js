@@ -13,6 +13,7 @@ let highScore = 0;
 //Broke up the code into smaller functions to make it easier to read and understand. Event listener to make the character jump using spacebar for desktop//
 document.addEventListener('keydown', function(event) {
     if (event.key === " " && !character.classList.contains('animate')) {
+        event.preventDefault(); 
         characterJump();
     }
 });
