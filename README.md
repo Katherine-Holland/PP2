@@ -93,7 +93,7 @@ As this language was new to me, I had a steep learning curve and there were many
 1. During testing I realised that the js script wasn't correctly loading from the assets folder.
 ![Script Errror Message](assets/images/scripterror.png)
    
-2. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing. I modified this code to stop the listener checking after the initial call to the game being over.
+2. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing. I modified this code to stop the listener checking multiple times after the initial call to the game being over.
  ![Pop Up Message](assets/images/screenfreeze.png)
 
 3. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
@@ -115,13 +115,16 @@ https://fonts.google.com/
 ## Images:
 **Wireframe:**
 https://balsamiq.com/
+
 **Mock Up:**
 https://ui.dev/amiresponsive?url=https://katherine-holland.github.io/PP2-Get-Gardening/
-Gnome png:  <a href="https://www.freepik.com/icon/christmas_10713384#fromView=search&page=2&position=91&uuid=f299468d-611a-472c-b1b4-3052a8f5781e">Icon by Paul J.</a>
 
-Snail png: <a href="https://www.freepik.com/icon/snail_1998793#fromView=search&page=1&position=94&uuid=ac283b6e-e3a3-4246-b66f-a6583c5d678e">Icon by Flat Icons</a>
+**Gnome png:**
+<a href="https://www.freepik.com/icon/christmas_10713384#fromView=search&page=2&position=91&uuid=f299468d-611a-472c-b1b4-3052a8f5781e">Icon by Paul J.</a>
 
-Grass jpg: 
+**Snail png:**
+<a href="https://www.freepik.com/icon/snail_1998793#fromView=search&page=1&position=94&uuid=ac283b6e-e3a3-4246-b66f-a6583c5d678e">Icon by Flat Icons</a>
+
 **Plant GIF:**
 <a href="https://lottiefiles.com/animations/plants-cGXbczhsoL?from=search">Plant GIF</a>
 

@@ -2,6 +2,11 @@
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 /*code modified into a function, from the google charts instructions https://developers.google.com/chart/interactive/docs/quick_start*/
+/**
+ * Chart imported from Google.
+ * Pie chart can be modified as needed to allow for
+ * different types of data.
+ */
 function drawChart() {
     var data = new google.visualization.DataTable();
     data.addColumn('string', 'Topping');

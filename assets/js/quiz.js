@@ -26,11 +26,15 @@ const questions = [
     correct: 1
   },
 ];
-
+/**
+ * This function loads the quiz quesitons onto the screen
+ */
 function loadQuestion(questionNumber) {
   question.innerText = questions[questionNumber].question;
 }
-
+/**
+ * This function loads the quiz answers onto the screen
+ */
 function loadAnswers(questionNumber) {
   const answers = questions[questionNumber].answers;
   answer1.innerText = answers[0];
@@ -41,7 +45,12 @@ function loadAnswers(questionNumber) {
   answer3.style.display = answers.length > 2 ? '' : 'none';
   answer4.style.display = answers.length > 3 ? '' : 'none';
 }
-
+/** This function checks if the answer is correct. 
+ * It then displays the score based on the users input.
+ * The function then moves the user onto the next question
+ * or ends the game after all the questions
+ * have been answered.
+ */
 function checkAnswer(answerNumber) {
   let correctAnswer = questions[questionNumber].correct;
   if (answerNumber === correctAnswer) {
@@ -56,7 +65,10 @@ function checkAnswer(answerNumber) {
     loadAnswers(questionNumber);
   }
 }
-
+/**
+ * This function ends the game and shows the score.
+ * It asks the user if they want to play again.
+ */
 function endGame() {
   playAgain.style.visibility = "visible";
   question.innerText = "Quiz Complete! Your score: " + scoreAmount;
@@ -65,7 +77,9 @@ function endGame() {
     button.style.visibility = "hidden";
   });
 }
-
+/**
+ * This function resets the quiz to allow the user to play again
+ */
 function resetQuiz() {
   questionNumber = 0;
   scoreAmount = 0;
@@ -76,7 +90,12 @@ function resetQuiz() {
   });
   startQuiz();
 }
-
+/**
+ * This function allows the user to choose to play again or end the game.
+ * If the user selects 'play again' the quiz is reset.
+ * If the user selects 'end the game' the quiz is ended and a link is
+ * displayed to further information about snails.
+ */
 function endGameOption(chosen) {
   if (chosen === 0) {
     resetQuiz();
@@ -84,7 +103,9 @@ function endGameOption(chosen) {
     wrapper.innerHTML = 'Thanks for playing! Find out more about snails <a href="https://www.nhm.ac.uk/discover/snails-and-slugs.html" rel="noopener"  target="_blank">here</a>.';
         }
   }
-
+/**
+ * This function starts the quiz.
+ */
 function startQuiz() {
   playAgain.style.visibility = "hidden";
   loadQuestion(questionNumber);
