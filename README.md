@@ -1,10 +1,9 @@
-# PP2
-Code Institute P2
+# Code Institute PP2
 
 # Get Gardening
 ![mock-up]( assets/images/gardening.png)
 
-A Code Institute Project (P2). Visit the live site [here](https://katherine-holland.github.io/PP2-Get-Gardening/)
+A Code Institute Project (PP2). Visit the live site [here](https://katherine-holland.github.io/PP2-Get-Gardening/).
 
 Contents
 1. [Introduction](#introduction)
@@ -42,7 +41,7 @@ I used Google fonts and choose Noto Sans. I chose this font as it had a fun, rou
 Below are the core functions and elements I incorporated into the site.
 
 ### Simple Game
-I created a simple game inspired by the dinosaur game which appears when the internet is not working. The aim of the game is to jump as many obstacles as possible without hitting them. The dinosaur game used a timer but I decided to implement a jump counter and high score generator.
+I created a simple game inspired by the dinosaur game (which appears on desktop when the internet is not working). The aim of the game is to jump as many obstacles as possible without hitting them. The dinosaur game used a timer but I decided to implement a jump counter and high score generator.
 ![Image](assets/images/dino.png)
 
 I found an online tutorial which re-created a similar functionality using blocks and I then modified this code with event listeners and graphics and more functionality to achieve the final snail game. As the coding progressed, I realised that this simple game was actually pretty difficult to code for a beginner and I was generating numerous errors as I went along (see 'Issues' below). However, I learnt a lot in the process!
@@ -62,7 +61,7 @@ I deployed the site via GitHub and gave detailed commits as the project progress
 
 I tested it using two popular browsers, Chrome and Firefox, both of which worked as expected.
 
-I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness, however, I did need to change the chart dimensions in the jsscript file to allow it to fit on smaller mobile screens.
+I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness, however, I did need to change the chart dimensions in the jsscript file to allow it to fit on smaller mobile screens and I also used media queries to ensure the site was viewable on mobile devices.
 
 ## Manual Testing
 1. I was testing the functionality of the site as I went along. For example, to check if the event listeners were responding correctly I logged events to the console.
@@ -80,27 +79,30 @@ The site passed through validation successfully.
 
 **W3 CSS Validator**
 1. I discovered an error in my CSS as I had used a float. I amended this error and the CSS passed through the validator.
-![CSS Validator](assets/images/error.png)
+![CSS Validator](assets/images/errorcss.png)
+![Image](assets/images/cssvalidator.png)
 
 **JSHint**
 1. 
+
 
 **JS Issues**
 As this language was new to me, I had a steep learning curve and there were many issues during the build.
 1. During testing I realised that the js script wasn't correctly loading from the assets folder.
 ![Script Errror Message](assets/images/scripterror.png)
    
-2. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
-This solved the issue and resulted in a better user experience.
-
-3. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing.
+2. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing. I modified this code to stop the listener checking after the initial call to the game being over.
  ![Pop Up Message](assets/images/screenfreeze.png)
+
+3. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
+This solved the issue and resulted in a better user experience.
 
 ## Future Features
 1. I would create more characters that have different rules for speed and size.
 2. I would add in harder levels as the game progresses. 
 3. I'd create a share button to allow users to share the game with their friends.
-4. I'd add in error handling when accessing DOM elements. Eg. the google charts api or any additional features for future editions.
+4. I'd add more questions to the quiz.
+5. I'd like to add a progress indicator to the quiz for a better user experience.
 
 ## Credits
 **Fonts:**

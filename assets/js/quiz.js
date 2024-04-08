@@ -51,14 +51,14 @@ function checkAnswer(answerNumber) {
   }
   questionNumber++;
   if (questionNumber === questions.length) {
-    endgame();
+    endGame();
   } else {
     loadQuestion(questionNumber);
     loadAnswers(questionNumber);
   }
 }
 
-function endgame() {
+function endGame() {
   playAgain.style.visibility = "visible";
   question.innerText = "Quiz Complete! Your score: " + scoreAmount;
   // Hide answer buttons
@@ -78,7 +78,7 @@ function resetQuiz() {
   startQuiz();
 }
 
-function endgameOption(chosen) {
+function endGameOption(chosen) {
   if (chosen === 0) {
     resetQuiz();
   } else {
