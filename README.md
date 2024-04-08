@@ -2,7 +2,7 @@
 Code Institute P2
 
 # Get Gardening
-![mock-up]( tba)
+![mock-up]( assets/images/gardening.png)
 
 A Code Institute Project (P2). Visit the live site [here](https://katherine-holland.github.io/PP2-Get-Gardening/)
 
@@ -16,51 +16,53 @@ Contents
 7. [Credits](#credits) 
 
 ## Introduction
-**Audience:**
-Get Gardening is a site aimed at a younger audience who want to learn about garden snails and play games.
+
+**Audience** 
+Get Gardening is a site aimed at a younger audience who want to learn about garden snails by playing themed games.
 
 **Client side:**
-The site is designed to feel fun and informative.
+The site is designed to feel fun and informative with simple activities and a link to more information on garden snails for those taking the quiz. This page would sit well within a larger educational website.
 
 ## Design
-The wireframe was created using Balsamiq. I created a basic structure.
+The wireframe was created using Balsamiq. I created a basic structure as I wasn't sure if I was going to be able to code both the quiz and the animated game in the timeframe.
 
 ![Wireframe for Mobile](assets/images/wireframe.png)
 
 ### Colours
+I used green and blue to represent the sky and the grass and kept the scheme simple. 
 
-
-![Colour palette](assets/images/palette.png)
+![Colour palette](assets/images/gardencolors.png)
 
 ### Fonts
-I used Google fonts and choose Noto Sans.
+I used Google fonts and choose Noto Sans. I chose this font as it had a fun, rounded feel to it but was also still accessible and easy to read.
 
-![Fonts](assets/images/fonts.png)
+![Fonts](assets/images/font.png)
 
 ## Features
 Below are the core functions and elements I incorporated into the site.
 
-### Navigation Bar
-I used Font Awesome to select my icons. I chose v4 icons to be compatible with the version I was coding with.
-I decided to lay out my navigation, with the 'Home Page' in the far right corner and the 'Sign Up' page on the left. This was to allow 'Sign Up' to be more dominant, therefore encouraging users to sign up to the newsletter and to increase the likelihood of growing an email list quickly.
-I also allowed the user to hover over the sections which would then change colour, I feel this helps to orient the user within the navigation.
+### Simple Game
+I created a simple game inspired by the dinosaur game which appears when the internet is not working. The aim of the game is to jump as many obstacles as possible without hitting them. The dinosaur game used a timer but I decided to implement a jump counter and high score generator.
+![Image](assets/images/dino.png)
 
-### Game Over Button
-I created a Game Over button which appears when the user loses the game.
+I found an online tutorial which re-created a similar functionality using blocks and I then modified this code with event listeners and graphics and more functionality to achieve the final snail game. As the coding progressed, I realised that this simple game was actually pretty difficult to code for a beginner and I was generating numerous errors as I went along (see 'Issues' below). However, I learnt a lot in the process!
+
+### Snail Quiz
+I created a simple quiz for children who wanted to learn more about snails. This game is followed by a link to the Natural History Museum's guide to snails, allowing the audience to find out more from an established authority on Natural History. This was created based around the topic on the Code Institute tutorial, using an array and a scoring system based on the correct answer being chosen.
 
 ### Images
 I chose images that related to a fun gaming theme.
-
-![Image](assets/images/gnome.png)
+![Image](assets/images/snail.png) 
 
 ### Footer
-I added a GIF to add interest to the footer and added the grass element to help set the scene.
+I added a GIF to add interest to the footer and used a green horizontal rule to denote grass and to break up the page.
 
 ## Deployment
-I deployed the site via GitHub and gave detailed commits as the project progressed.
+I deployed the site via GitHub and gave detailed commits as the project progressed.  I did this on the 'pages' section via the repository 'settings' tab. Under the 'source' drop down menu, I deployed from branch, ensuring the 'root' folder was selected before saving it. Under the green 'code' button, within the repository, the URL link is shown and I copy pasted into the browser and IDE.
 
-I tested it using two popular browsers, Chrome and Firefox, both of which worked well.
-I then checked the site using Google Dev Tools testing the mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness.
+I tested it using two popular browsers, Chrome and Firefox, both of which worked as expected.
+
+I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness, however, I did need to change the chart dimensions in the jsscript file to allow it to fit on smaller mobile screens.
 
 ## Manual Testing
 I used various methods to test the accessibility of my site and the quality of my code. The testing resulted in a number of error messages and suggestions which I took note of and implemented the necessary changes.
@@ -85,6 +87,17 @@ I used various methods to test the accessibility of my site and the quality of m
 **JSHint**
 1. 
 
+**JS Issues**
+As this language was new to me, I had a steep learning curve and there were many issues during the build.
+1. During testing I realised that the js script wasn't correctly loading from the assets folder.
+![Script Errror Message](assets/images/scripterror.png)
+   
+2. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
+This solved the issue and resulted in a better user experience.
+
+3. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing.
+ ![Pop Up Message](assets/images/screenfreeze.png)
+
 ## Future Features
 1. I would create more characters that have different rules for speed and size.
 2. I would add in harder levels as the game progresses. 
@@ -101,6 +114,8 @@ Snail png: <a href="https://www.freepik.com/icon/snail_1998793#fromView=search&p
 Grass jpg: 
 **Plant GIF:**
 <a href="https://lottiefiles.com/animations/plants-cGXbczhsoL?from=search">Plant GIF</a>
+**Dino game visual for README:** 
+Anand Krish, CC BY-SA 4.0 <a href="https://creativecommons.org/licenses/by-sa/4.0">, via Wikimedia Commons
 
 ## Website Validators:
 https://validator.w3.org/
