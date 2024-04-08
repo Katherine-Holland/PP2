@@ -65,24 +65,22 @@ I tested it using two popular browsers, Chrome and Firefox, both of which worked
 I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness, however, I did need to change the chart dimensions in the jsscript file to allow it to fit on smaller mobile screens.
 
 ## Manual Testing
-I used various methods to test the accessibility of my site and the quality of my code. The testing resulted in a number of error messages and suggestions which I took note of and implemented the necessary changes.
+1. I was testing the functionality of the site as I went along. For example, to check if the event listeners were responding correctly I logged events to the console.
+![Console](assets/images/debug.png)
+
+I also used various methods to test the accessibility of my site and the quality of my code. The testing resulted in a number of error messages and suggestions which I took note of and implemented the necessary changes.
 
 **W3Schools HTML Validator**
-1. 
-2. 
-
-![HTMLValidator](assets/images/htmlvalidator.png)
+The site passed through validation successfully.
+![HTMLValidator](assets/images/htmlcheck.png)
 
 **Lighthouse**
-1. 
-2. I added alt text to my images as Lighthouse flagged up that they were not accessible to screen readers.
-
+1. I added alt text to my images as Lighthouse flagged up that they were not accessible to screen readers.
 ![Lighthouse](assets/images/lighthouse.png)
 
 **W3 CSS Validator**
-1. 
-
-![CSS Validator](assets/images/cssvalidation.png)
+1. I discovered an error in my CSS as I had used a float. I amended this error and the CSS passed through the validator.
+![CSS Validator](assets/images/error.png)
 
 **JSHint**
 1. 
