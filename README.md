@@ -57,7 +57,8 @@ I chose images that related to a fun gaming theme.
 I added a GIF to add interest to the footer and used a green horizontal rule to denote grass and to break up the page.
 
 ## Deployment
-I deployed the site via GitHub and gave detailed commits as the project progressed.  I did this on the 'pages' section via the repository 'settings' tab. Under the 'source' drop down menu, I deployed from branch, ensuring the 'root' folder was selected before saving it. Under the green 'code' button, within the repository, the URL link is shown and I copy pasted into the browser and IDE.
+I deployed the site via GitHub. I did this on the 'pages' section via the repository 'settings' tab. Under the 'source' drop down menu, I deployed from branch, ensuring the 'root' folder was selected before saving it. Under the green 'code' button, within the repository, the URL link is shown and I copy pasted into the browser and IDE.
+I gave detailed commits as the project progressed via GitHub. These changes were committed using these steps: Giving a summary of the commit, a description of the commit, then staging and committing all changes before pushing to GitHub.
 
 I tested it using two popular browsers, Chrome and Firefox, both of which worked as expected.
 
@@ -84,7 +85,7 @@ The site passed through validation successfully.
 
 **JSHint**
 
-I passed all three of my .js files through JSHint.
+I passed all three of my .js files through JSHint successfully. The only issues flagged related to 'two unused variables' these were checkAnswer and endGameOption in the quiz.js file. However, these were not unused as they feature in the HTML file.
 
 
 **Other JS Issues**
