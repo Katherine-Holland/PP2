@@ -15,10 +15,9 @@ function drawChart() {
     ]);
 
     var options = {
-        'title': 'Plants Snails Ate In One Night',
-        'width': '90%',
-        'height': '300px',
-        'backgroundColor': 'transparent'
+      'title': 'Plants Snails Ate In One Night',
+      width: '100%',
+      'backgroundColor': 'transparent'
     };
 
     var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
