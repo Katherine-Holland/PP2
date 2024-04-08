@@ -27,13 +27,15 @@ const questions = [
   },
 ];
 /**
- * This function loads the quiz questions onto the screen
+ * This function loads the relevant quiz question onto the screen
  */
 function loadQuestion(questionNumber) {
   question.innerText = questions[questionNumber].question;
 }
 /**
- * This function loads the quiz answers onto the screen
+ * This function retrieves the array of answer options corresponding to the question number provided.
+ * The function then assigns each answer option to the respective HTML elements.
+ * The function also changes the visibility of answer buttons based on the number of potential answers available.
  */
 function loadAnswers(questionNumber) {
   const answers = questions[questionNumber].answers;
@@ -41,7 +43,7 @@ function loadAnswers(questionNumber) {
   answer2.innerText = answers[1];
   answer3.innerText = answers.length > 2 ? answers[2] : '';
   answer4.innerText = answers.length > 3 ? answers[3] : '';
-  // Hide buttons if there are no answers (for questions with less than 4 options)
+  // Hides buttons if there are no answers (for questions with less than 4 options)//
   answer3.style.display = answers.length > 2 ? '' : 'none';
   answer4.style.display = answers.length > 3 ? '' : 'none';
 }

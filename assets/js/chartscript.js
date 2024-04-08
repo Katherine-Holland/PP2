@@ -1,10 +1,10 @@
-/* created a js file to remove code from head of HTML and place in script area of HTML body to help with load sequence*/
+/* I created this chart.js file to remove code from head of HTML and place in script area of HTML body to help with load sequence*/
 google.charts.load('current', {'packages':['corechart']});
 google.charts.setOnLoadCallback(drawChart);
 /*code modified into a function, from the google charts instructions https://developers.google.com/chart/interactive/docs/quick_start*/
 /**
  * Chart imported from Google.
- * Pie chart can be modified as needed to allow for
+ * The pie chart can be modified as needed to allow for
  * different types of data.
  */
 function drawChart() {

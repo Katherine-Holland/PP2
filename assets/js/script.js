@@ -31,7 +31,7 @@ document.addEventListener('touchstart', function() {
 });
 /**
  * This function allows the score to remain the same if the character jumps without
- * passing over the block. 
+ * passing over the block. It is checked every 500ms. 
  */
 function characterJump() {
     character.classList.add('animate');
@@ -48,7 +48,7 @@ document.getElementById("game-over-message").addEventListener('click', function(
 });
 /**
  * This function checks for collision between the character and the block (set to every 10 ms).
- * This function checks if the block has been successfully jumped. If so the score is updated.
+ * This function checks if the block has been successfully jumped. If so, the score is updated.
  * This is triggered if the character and the block overlap.
  * This function also stops the game if a collision in true. The function also calls the event listener 'game over message'.
  * The function checks to see if the final score is a high score and if true displays the new highscore.

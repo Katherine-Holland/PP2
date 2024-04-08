@@ -77,7 +77,7 @@ header {
   background-color: white;
   border-radius:20px;
 }
-/* quiz wrapper and elements*/
+/* Quiz wrapper*/
 #wrapper {
   margin:2%;
 }
@@ -114,7 +114,7 @@ hr {
     border: 10px solid #27ce48;
     border-radius: 5px;
   }
-/* Footer modified from P2 walkthrough tutorial rock paper scissors */ 
+/* Footer modified from the Code Institute P2 walkthrough tutorial: Rock, Paper, Scissors */ 
 footer {
   position: static;
   left: 0;
