@@ -25,14 +25,12 @@ document.addEventListener('touchstart', function() {
 });
 //Function to make the character jump//
 function characterJump() {
-    console.log("Jump event detected"); // debugging purposes//
     character.classList.add('animate');
     scoreUpdated = false; 
     setTimeout(() => character.classList.remove('animate'), 500);
 }
 //Function to allow game to be restarted//
 document.getElementById("game-over-message").addEventListener('click', function() {
-    console.log("click detected"); // debugging purposes//
     this.style.display = 'none';
     restartGame();
 });

@@ -65,10 +65,10 @@
           <div id="question"></div>
           <button id="answer1" onclick="checkAnswer(0)"></button>
           <button id="answer2" onclick="checkAnswer(1)"></button>
-          <button id="answer3" onclick="checkAnswer(2)" style="display: none;"></button> <!-- Initially hidden if not needed -->
-          <button id="answer4" onclick="checkAnswer(3)" style="display: none;"></button> <!-- Initially hidden if not needed -->
+          <button id="answer3" onclick="checkAnswer(2)" style="display: none;"></button> <!-- hidden until needed -->
+          <button id="answer4" onclick="checkAnswer(3)" style="display: none;"></button> <!-- hidden until needed -->
           <div>Score: <span id="scoreQuiz">0</span></div>
-          <div id="playAgain" style="visibility: hidden;"> <!-- Initially hidden -->
+          <div id="playAgain" style="visibility: hidden;">
             <p>Try Again?</p>
             <button onclick="resetQuiz()">Yes</button> 
             <button onclick="endGameOption(1)">No Thanks</button> 
