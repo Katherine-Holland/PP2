@@ -10,31 +10,50 @@ let highScore = 0;
     highScore = parseInt(localStorage.getItem("highScore"));
     document.getElementById("highScore").innerHTML = `High Score: ${highScore}`; 
 }
-//Broke up the code into smaller functions to make it easier to read and understand. Event listener to make the character jump using spacebar for desktop//
+/**
+ * This event listener allows the spacebar to trigger a character jump on desktop computers.
+ * It also prevents the default action of the spacebar from scrolling the page down.
+ */
 document.addEventListener('keydown', function(event) {
     if (event.key === " " && !character.classList.contains('animate')) {
         event.preventDefault(); 
         characterJump();
     }
 });
-//Event listener to allow character to jump using a tap on mobile//
+/**
+ * This event listener allows the user to tap the mobile screen
+ * to trigger a character jump on mobile devices.
+ */
 document.addEventListener('touchstart', function() {
     if (!character.classList.contains('animate')) {
         characterJump();
     }
 });
-//Function to make the character jump//
+/**
+ * This function allows the score to remain the same if the character jumps without
+ * passing over the block. 
+ */
 function characterJump() {
     character.classList.add('animate');
     scoreUpdated = false; 
     setTimeout(() => character.classList.remove('animate'), 500);
 }
-//Function to allow game to be restarted//
+/**
+ * This event listener allows the option for game restart if the game over message
+ * is displayed.
+ */
 document.getElementById("game-over-message").addEventListener('click', function() {
     this.style.display = 'none';
     restartGame();
 });
-//Function to to check for collision between the character and the block (set to every 10 ms), plus stop the game and check scores//
+/**
+ * This function checks for collision between the character and the block (set to every 10 ms).
+ * This function checks if the block has been successfully jumped. If so the score is updated.
+ * This is triggered if the character and the block overlap.
+ * This function also stops the game if a collision in true. The function also calls the event listener 'game over message'.
+ * The function checks to see if the final score is a high score and if true displays the new highscore.
+ * The function also checks and displays the users score for that game.//
+ */
 setInterval(function() {
     var characterTop = parseInt(window.getComputedStyle(character).getPropertyValue("top"));
     var blockLeft = parseInt(window.getComputedStyle(block).getPropertyValue("left"));
@@ -43,20 +62,22 @@ setInterval(function() {
         block.style.display = "none";
         gameIsOver = true;
         document.getElementById("game-over-message").style.display = "block";
-        // Check if the current score is higher than the high score. Code: https://www.w3schools.com/jsref/prop_win_localstorage.asp//
+        //Code: https://www.w3schools.com/jsref/prop_win_localstorage.asp//
         if (jumpCount > highScore) {
             highScore = jumpCount;
             localStorage.setItem("highScore", highScore);
             document.getElementById("highScore").innerHTML = `High Score: ${highScore}`;
         }
-      //to check if the block has been jumped to allow the jump to count as a point//
     } else if (blockLeft < 20 && blockLeft > 0 && !scoreUpdated) {
         jumpCount++;
         document.getElementById("score").innerHTML = jumpCount;
         scoreUpdated = true; 
     }
 }, 10);
-//starts and restarts the game//
+/**
+ * This function resets the game blocks to their starting points and resets the
+ * jump counter to zero. The highscore remains the same.
+ */
 function restartGame() {
     gameIsOver = false;
     character.style.display = "block";
@@ -67,5 +88,5 @@ function restartGame() {
     document.getElementById("score").innerHTML = 0;
     character.style.top = "150px";
 }
-//added this to allow game to start with characters in the correct position on initial load of page//
+
 restartGame();

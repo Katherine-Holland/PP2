@@ -27,7 +27,7 @@ const questions = [
   },
 ];
 /**
- * This function loads the quiz quesitons onto the screen
+ * This function loads the quiz questions onto the screen
  */
 function loadQuestion(questionNumber) {
   question.innerText = questions[questionNumber].question;
