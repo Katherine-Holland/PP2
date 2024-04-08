@@ -1,14 +1,15 @@
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 100%;
   height: auto; 
   text-align: center;
+
 }
 
 body {
   font-family:'Noto+Sans', sans-serif;
   text-align: center;
-  width: 90%;
+  width: 95%;
   max-width: 100%;
   background-color: white;
 }
