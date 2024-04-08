@@ -83,10 +83,12 @@ The site passed through validation successfully.
 ![Image](assets/images/cssvalidator.png)
 
 **JSHint**
-1. 
+
+I passed all three of my .js files through JSHint.
 
 
-**JS Issues**
+**Other JS Issues**
+
 As this language was new to me, I had a steep learning curve and there were many issues during the build.
 1. During testing I realised that the js script wasn't correctly loading from the assets folder.
 ![Script Errror Message](assets/images/scripterror.png)
