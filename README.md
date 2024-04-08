@@ -87,7 +87,6 @@ The site passed through validation successfully.
 
 I passed all three of my .js files through JSHint successfully. The only issues flagged related to 'two unused variables' these were checkAnswer and endGameOption in the quiz.js file. However, these were not unused as they feature in the HTML file.
 
-
 **Other JS Issues**
 
 As this language was new to me, I had a steep learning curve and there were many issues during the build.
@@ -99,6 +98,8 @@ As this language was new to me, I had a steep learning curve and there were many
 
 3. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
 This solved the issue and resulted in a better user experience.
+
+4. The Google chart that I imported was hard to make mobile responsive and I had issues with sizing the width. I modified the width in the chartscript.js file to allow the chart to look good on smaller screens, such as the Galaxy Fold.
 
 ## Future Features
 1. I would create more characters that have different rules for speed and size.
