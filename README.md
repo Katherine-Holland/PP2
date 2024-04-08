@@ -16,10 +16,12 @@ Contents
 
 ## Introduction
 
-**Audience** 
+**Audience:**
+
 Get Gardening is a site aimed at a younger audience who want to learn about garden snails by playing themed games.
 
 **Client side:**
+
 The site is designed to feel fun and informative with simple activities and a link to more information on garden snails for those taking the quiz. This page would sit well within a larger educational website.
 
 ## Design
@@ -47,22 +49,23 @@ I created a simple game inspired by the dinosaur game (which appears on desktop 
 I found an online tutorial which re-created a similar functionality using blocks and I then modified this code with event listeners and graphics and more functionality to achieve the final snail game. As the coding progressed, I realised that this simple game was actually pretty difficult to code for a beginner and I was generating numerous errors as I went along (see 'Issues' below). However, I learnt a lot in the process!
 
 ### Snail Quiz
-I created a simple quiz for children who wanted to learn more about snails. This game is followed by a link to the Natural History Museum's guide to snails, allowing the audience to find out more from an established authority on Natural History. This was created based around the topic on the Code Institute tutorial, using an array and a scoring system based on the correct answer being chosen.
+I created a simple quiz for children who wanted to learn more about snails. This game is followed by a link to the Natural History Museum's guide to snails, allowing the audience to find out more from an established authority on Natural History. 
+This quiz was created around a similar code structure to the Code Institute tutorial 'Rock , Paper, Scissors', using an array and a scoring system based on the correct answer being chosen.
 
 ### Images
 I chose images that related to a fun gaming theme.
 ![Image](assets/images/snail.png) 
 
 ### Footer
-I added a GIF to add interest to the footer and used a green horizontal rule to denote grass and to break up the page.
+I added a GIF to add interest to the footer and used a green horizontal rule to denote grass and to add some style to the page.
 
 ## Deployment
-I deployed the site via GitHub. I did this on the 'pages' section via the repository 'settings' tab. Under the 'source' drop down menu, I deployed from branch, ensuring the 'root' folder was selected before saving it. Under the green 'code' button, within the repository, the URL link is shown and I copy pasted into the browser and IDE.
+I deployed the site via GitHub. I did this on the 'pages' section via the repository 'settings' tab. Under the 'source' drop down menu, I deployed from branch, ensuring the 'root' folder was selected before saving it. 
 I gave detailed commits as the project progressed via GitHub. These changes were committed using these steps: Giving a summary of the commit, a description of the commit, then staging and committing all changes before pushing to GitHub.
 
 I tested it using two popular browsers, Chrome and Firefox, both of which worked as expected.
 
-I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well as I had used a container to add mobile responsiveness, however, I did need to change the chart dimensions in the jsscript file to allow it to fit on smaller mobile screens and I also used media queries to ensure the site was viewable on mobile devices.
+I tested the site using Google Dev Tools both for desktop and for mobile responsiveness on all devices. The site worked well, as I had used a container to add mobile responsiveness. However, I did need to change the chart dimensions in the script.js file to allow it to fit on smaller mobile screens and I also used media queries to ensure the site was viewable on mobile devices.
 
 ## Manual Testing
 1. I was testing the functionality of the site as I went along. For example, to check if the event listeners were responding correctly I logged events to the console.
@@ -71,14 +74,17 @@ I tested the site using Google Dev Tools both for desktop and for mobile respons
 I also used various methods to test the accessibility of my site and the quality of my code. The testing resulted in a number of error messages and suggestions which I took note of and implemented the necessary changes.
 
 **W3Schools HTML Validator**
+
 The site passed through validation successfully.
 ![HTMLValidator](assets/images/htmlcheck.png)
 
 **Lighthouse**
+
 1. I added alt text to my images as Lighthouse flagged up that they were not accessible to screen readers.
 ![Lighthouse](assets/images/lighthouse.png)
 
 **W3 CSS Validator**
+
 1. I discovered an error in my CSS as I had used a float. I amended this error and the CSS passed through the validator.
 ![CSS Validator](assets/images/errorcss.png)
 ![Image](assets/images/cssvalidator.png)
@@ -90,16 +96,14 @@ I passed all three of my .js files through JSHint successfully. The only issues 
 **Other JS Issues**
 
 As this language was new to me, I had a steep learning curve and there were many issues during the build.
+
 1. During testing I realised that the js script wasn't correctly loading from the assets folder.
 ![Script Errror Message](assets/images/scripterror.png)
-   
-2. My event listener was checking for game over too quickly which caused the page to effectively freeze with the pop up constantly showing. I modified this code to stop the listener checking multiple times after the initial call to the game being over.
- ![Pop Up Message](assets/images/screenfreeze.png)
 
-3. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
+2. Upon testing the game feature, my Mentor pointed out that the spacebar (used as the jump key) was causing the screen to scroll downwards, which is a default action. I rectified this by adding in a simple line of code to the "Keydown" event listener: event.preventDefault();
 This solved the issue and resulted in a better user experience.
 
-4. The Google chart that I imported was hard to make mobile responsive and I had issues with sizing the width. I modified the width in the chartscript.js file to allow the chart to look good on smaller screens, such as the Galaxy Fold.
+3. The Google chart that I imported was hard to make mobile responsive and I had issues with sizing the width. I modified the width in the chartscript.js file to allow the chart to look good on smaller screens, such as the Galaxy Fold.
 
 ## Future Features
 1. I would create more characters that have different rules for speed and size.
