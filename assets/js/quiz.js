@@ -43,7 +43,6 @@ function loadAnswers(questionNumber) {
 }
 
 function checkAnswer(answerNumber) {
-  console.log('answer number chosen: ', answerNumber);
   let correctAnswer = questions[questionNumber].correct;
   if (answerNumber === correctAnswer) {
     scoreAmount++;
